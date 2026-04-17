@@ -42,3 +42,14 @@ header {
     align-content: center;
     background-color: #464646;
 }
+.menu-hamburguer i{
+    font: size 1.2em;
+    color:#eee
+}
+.menu-hamburguer:hover i {
+    color: #eee; /* cor do icone */
+}
+
+.menu-hamburguer i:hover {
+    color: rgb(235, 20, 20); 
+}

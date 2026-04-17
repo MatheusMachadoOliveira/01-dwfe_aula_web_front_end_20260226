@@ -1,0 +1,75 @@
+.cartao {
+    border: .1rem solid #7777;
+    border-radius: .5rem;
+    box shadow: .3rem .3rem .03rem #eee;
+    display: flex;
+    flex-direction: column; /* define que o site sera em colunas*/
+    width: 15rem; /*largura*/
+    padding: 1rem;
+}
+
+.imagem-do-cartao {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 2/1.3; /*proporcao entre largura e altura*/
+    object-fit: cover; 
+}
+.titulo-do-cartao{
+    font-size: 1.5rem;
+    font: blod;
+    margin: 0.5rem 0rem;
+}
+
+.titulo-do-cartao {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0rem;
+}
+ .classificacao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+ }
+
+.categoria-da-noticia,
+.data-da-noticia,
+.autor-da-noticia {
+    font-size: 0.7rem;
+}
+.categoria-da-noticia{
+    color: greenyellow;
+}
+ .data-da-noticia{
+    color: red;
+ }
+.descricao-da-noticia{
+    margin-bottom: 0.5rem;
+}
+
+.autor-da-noticia{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.botao-do-cartao{
+    max-width: 100%;
+    padding: 0.5rem;
+    background-color: blue;
+    color: #eee;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.botao-do-cartao{
+    background-color: #1818b0;
+    color: white;
+}
+
+
+

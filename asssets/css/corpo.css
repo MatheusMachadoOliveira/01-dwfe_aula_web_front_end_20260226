@@ -1,0 +1,14 @@
+section {
+    /* border: .1rem solid black; */
+    display: flex;
+    flex: 1;
+}
+
+.container{
+    display: flex;
+    flex: 1;
+    padding: .1rem;
+    flex-wrap: .1rem;
+    gap: 0.8rem;
+    justify-content: left;
+}
