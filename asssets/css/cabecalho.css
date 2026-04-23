@@ -1,37 +1,38 @@
 header {
-    /* border: .1rem red solid; */
-    height: 4rem;
+    /* border: 0.1rem solid red; */
+    height: 2rem; /*altura da barra*/
+    background-color: #252523; /*cor de fundo da barra*/
+    color: #eee;/*cor do que está escrito na barra*/
     display: flex;
-    /*justify-content: center;*/
-    align-items: center;
+    /* justify-content: center; */
     align-content: center;
-    padding: .5rem;
-    background-color: #252323;
-    color: #eee;
+    align-items: center;
+    padding: .5rem; /*deixa a barra afastada das letras*/
 }
+
 .logo {
-    border: .1rem blue solid;
-    background-color: blue;
+    border: .1rem blue solid; /* borda destacada*/
+    background-color: blue; /*cor de fundo ao redor da logo da página*/
+    color: #eeee; /*cor da escrita*/
+    font-weight: bold; /* deixa escrita em negrito*/
+    border-radius: 100%; /* arredondar bordas*/
     width: 1rem;
     height: 1rem;
-    color:#eee;
-    font-weight: bold;
-    border-radius: 100%;
-    padding: .7rem;
+    padding: 0.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-right: .7rem;
-
+    margin-right: 0.7rem; /*distancia do canto direito da pagina*/
 }
-.title {
+
+.titulo {
+    /* border: 1rem solid white; */
     flex: 1;
-    border: .1rem solid white;
 }
 
 .menu-hamburguer {
-    border: .1rem solid red;
+    /* border: .1rem solid red; */
     border-radius: 100%;
     width: 1rem;
     height: 1rem;
@@ -40,16 +41,18 @@ header {
     justify-content: center;
     align-items: center;
     align-content: center;
-    background-color: #464646;
+    background-color: #a01e1e;
 }
-.menu-hamburguer i{
-    font: size 1.2em;
-    color:#eee
+
+.menu-hamburguer i {
+    font-size: 1.2rem;
+    color: #ccc;
 }
+
 .menu-hamburguer:hover i {
-    color: #eee; /* cor do icone */
+    color: #e41717; /* cor do icone */
 }
 
 .menu-hamburguer i:hover {
-    color: rgb(235, 20, 20); 
+    color: white; 
 }
