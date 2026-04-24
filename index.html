@@ -1,110 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meu Site de Notícias</title>
-  <link rel="stylesheet" href="./assets/css/estilo.css" />
-  <script src="https://kit.fontawesome.com/01aa825c71.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu site de noticias</title>
+    <script src="./assets/js/login.js"> </script>
 </head>
 
 <body>
+    <div class="container">
+        <h1>Login</h1>
+        <form action="">
+            <input id="email" type="text" placeholder="informe seu email />
+            <input id=" senha" type="password" placeholder="informe sua senha">
+            <button onclick="verificarCredenciais()">
 
-  <header>
-    <div class="logo">W</div> <!--O que está escrito dentro da logo-->
-    <h1 class="titulo">Meu site de noticias</h1> <!-- titulo da pagina -->
-    <div class="menu-hamburger">
-      <i class="fa-solid fa-bars"></i>
+            </button>
+        </form>
+
     </div>
-  </header>
 
-  <section>
-    <nav>
-      <ul class="menu-lateral">
-
-        <li>
-          <a href="">
-            <div class="opcao">
-              <div class="icone-inicial"> <!-- icone que está no canto -->
-                <i class="fa-regular fa-newspaper"></i> <!-- link da onde está vindo esse icone -->
-              </div>
-              <div class="rotulo">Noticias</div> <!-- ao lado o icone inial, titulo -->
-              <div class="icone-final">
-                <i class="fa-solid fa-chevron-right"></i> <!-- setinha no final que só aparece quando passa o mousse por cima-->
-              </div>
-            </div>
-          </a>
-        </li>
-
-        <li> 
-          <a href="">
-            <div class="opcao">
-              <div class="icone-inicial">
-                <i class="fa-solid fa-envelope"></i>
-              </div>
-              <div class="rotulo">Mensagem</div>
-              <div class="icone-final">
-                <i class="fa-solid fa-chevron-right"></i>
-              </div>
-            </div>
-          </a>
-        </li>
-        
-        <li> <a href="">
-          <div class="opcao">
-            <div class="icone-inicial">
-              <i class="fa-solid fa-user"></i>
-            </div>
-            <div class="rotulo">Perfil</div>
-              <div class="icone-final">
-                <i class="fa-solid fa-chevron-right"></i>
-              </div>
-            </div>
-          </a>
-        </li>
-
-        <li> <a href="">
-            <div class="opcao">
-              <div class="icone-inicial">
-              <i class="fa-solid fa-arrow-right-from-bracket"></i>
-              </div>
-              <div class="rotulo">Sair</div>
-              <div class="icone-final">
-              <i class="fa-solid fa-chevron-right"></i>
-              </div>
-            </div>
-          </a>
-        </li>
-
-      </ul>
-    </nav>
-    <main>
-
-      <div class="cartao">
-        <img src="./assets/img/transporte-publico.jpg" alt="" class="imagem-do-cartao" /> <!-- Link da imagem -->
-        <section class="corpo-do-cartao">
-          <h1 class="titulo-da-noticia">Tranporte Público em Belo Horizonte</h1>
-          <div class="classificacao-da-noticia">
-            <span class="categoria-da-noticia">Transporte</span>
-            <span class="data-da-noticia">12/03/2026</span>
-          </div>
-
-          <div class="descricao-da-noticia">
-            O transporte público em Belo Horizonte é focado em uma vasta rede
-            de ônibus.
-          </div>
-
-          <div class="autoria-da-noticia">Ana Maria Silva</div>
-          
-        </section>
-        <a href="#" class="botao-do-cartao">Ler mais</a>
-      </div>
-
-    </main>
-  </section>
-
-  <footer>&copy; Meu Site de Notícias</footer>
 </body>
 
 </html>
