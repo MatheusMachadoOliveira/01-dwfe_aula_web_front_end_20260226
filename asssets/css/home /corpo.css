@@ -8,8 +8,8 @@ section {
     /* border: .1rem solid purple; */
     display: flex;
     flex: 1;
-    padding: .1rem;
-    flex-wrap:wrap;
-    gap: 0.8rem;
+    padding: 1rem;
+    flex-wrap: wrap; /* faz a linha quebrar */
+    gap: .8rem;
     justify-content: left;
 }

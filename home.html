@@ -1,126 +1,255 @@
 <!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Site de Notícias</title>
+    <link rel="stylesheet" href="./assets/css/home/estilo.css" />
+    <script src="https://kit.fontawesome.com/f7dc6d9018.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/menu-hamburguer.js"></script>
+  
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meu Site de Notícias</title>
-  <link rel="stylesheet" href="./assets/css/estilo.css" />
-  <script src="https://kit.fontawesome.com/01aa825c71.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-
-  <header>
-    <div class="logo">W</div>
-    <h1 class="titulo">Meu site de notícias</h1>
-
-    <!-- botão acessível -->
-    <button class="menu-hamburger" aria-label="Abrir menu">
-      <i class="fa-solid fa-bars"></i>
-    </button>
-  </header>
-
-  <section class="container">
-    <nav id="menu">
-      <ul class="menu-lateral">
-
-        <li>
-          <a href="#">
-            <div class="opcao">
-              <div class="icone-inicial">
-                <i class="fa-regular fa-newspaper"></i>
-              </div>
-              <div class="rotulo">Notícias</div>
-              <div class="icone-final">
-                <i class="fa-solid fa-chevron-right"></i>
-              </div>
-            </div>
-          </a>
-        </li>
-
-        <li> 
-          <a href="#">
-            <div class="opcao">
-              <div class="icone-inicial">
-                <i class="fa-solid fa-envelope"></i>
-              </div>
-              <div class="rotulo">Mensagem</div>
-              <div class="icone-final">
-                <i class="fa-solid fa-chevron-right"></i>
-              </div>
-            </div>
-          </a>
-        </li>
-        
-        <li>
-          <a href="#">
-            <div class="opcao">
-              <div class="icone-inicial">
-                <i class="fa-solid fa-user"></i>
-              </div>
-              <div class="rotulo">Perfil</div>
-              <div class="icone-final">
-                <i class="fa-solid fa-chevron-right"></i>
-              </div>
-            </div>
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <div class="opcao">
-              <div class="icone-inicial">
-                <i class="fa-solid fa-arrow-right-from-bracket"></i>
-              </div>
-              <div class="rotulo">Sair</div>
-              <div class="icone-final">
-                <i class="fa-solid fa-chevron-right"></i>
-              </div>
-            </div>
-          </a>
-        </li>
-
-      </ul>
-    </nav>
-
-    <main>
-
-      <div class="cartao">
-        <img src="./assets/img/transporte-publico.jpg" alt="Ônibus em Belo Horizonte" class="imagem-do-cartao" />
-
-        <section class="corpo-do-cartao">
-          <h2 class="titulo-da-noticia">Transporte Público em Belo Horizonte</h2>
-
-          <div class="classificacao-da-noticia">
-            <span class="categoria-da-noticia">Transporte</span>
-            <span class="data-da-noticia">12/03/2026</span>
-          </div>
-
-          <p class="descricao-da-noticia">
-            O transporte público em Belo Horizonte é focado em uma vasta rede de ônibus.
-          </p>
-
-          <div class="autoria-da-noticia">Ana Maria Silva</div>
-        </section>
-
-        <a href="#" class="botao-do-cartao">Ler mais</a>
+  <body>
+    <header>
+      <div class="logo">M</div>
+      <h1 class="titulo">Meu site de notícias</h1>
+      <div class="menu-hamburguer" onclick="alternarVizualizacaodoMenuLateral();"> 
+        <i class="fa-solid fa-bars"></i>
       </div>
+    </header>
+    <section>
+      <nav>
+        <ul class="menu-lateral">
+          <li>
+            <a href="#">
+              <div class="opcao">
+                <div class="icone-inicial">
+                  <i class="fa-solid fa-newspaper"></i>
+                </div>
+                <div class="rotulo">Notícia</div>
+                <div class="icone-final">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="opcao">
+                <div class="icone-inicial">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="rotulo">Mensagem</div>
+                <div class="icone-final">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="opcao">
+                <div class="icone-inicial">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="rotulo">Perfil</div>
+                <div class="icone-final">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="index.html">
+              <div class="opcao">
+                <div class="icone-inicial">
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </div>
+                <div class="rotulo">Sair</div>
+                <div class="icone-final">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <main id="notícias" class="container">
 
-    </main>
-  </section>
+        <div class="cartao">
+          <img
+            src="./assets/img/cachorrinho.png"
+            alt=""
+            class="imagem-do-cartao"
+          />
+          <section class="corpo-do-cartao">
+            <h1 class="titulo-da-noticia">
+              Cachorrinhos ajudam a aumentar o nível de serotonina.
+            </h1>
+            <div class="classificacao-da-noticia">
+              <span class="categoria-da-noticia">Animais.</span>
+              <span class="data-da-noticia">12/03/2026</span>
+            </div>
+            <div class="descricao-da-noticia">
+             Os cachorros ajudam significativamente na regulação de hormônios 
+             ligados ao bem-estar e ao estresse. A interação com cães, como 
+             acariciar, brincar ou simplesmente estar na presença deles, 
+             promove mudanças químicas reais no corpo humano.
+            </div>
+            <div class="autoria-da-noticia">Maria Heloiza.</div>
+          </section>
+          <a href="#" class="botao-do-cartao">Ler mais</a>
+        </div>
 
-  <footer>&copy; Meu Site de Notícias</footer>
+        <div class="cartao">
+          <img
+            src="./assets/img/cachorrinho.png"
+            alt=""
+            class="imagem-do-cartao"
+          />
+          <section class="corpo-do-cartao">
+            <h1 class="titulo-da-noticia">
+              Cachorrinhos ajudam a aumentar o nível de serotonina.
+            </h1>
+            <div class="classificacao-da-noticia">
+              <span class="categoria-da-noticia">Animais.</span>
+              <span class="data-da-noticia">12/03/2026</span>
+            </div>
+            <div class="descricao-da-noticia">
+             Os cachorros ajudam significativamente na regulação de hormônios 
+             ligados ao bem-estar e ao estresse. A interação com cães, como 
+             acariciar, brincar ou simplesmente estar na presença deles, 
+             promove mudanças químicas reais no corpo humano.
+            </div>
+            <div class="autoria-da-noticia">Maria Heloiza.</div>
+          </section>
+          <a href="#" class="botao-do-cartao">Ler mais</a>
+        </div>
 
-  <!-- SCRIPT para funcionar o menu -->
-  <script>
-    const btn = document.querySelector('.menu-hamburger');
-    const menu = document.getElementById('menu');
+        <div class="cartao">
+          <img
+            src="./assets/img/cachorrinho.png"
+            alt=""
+            class="imagem-do-cartao"
+          />
+          <section class="corpo-do-cartao">
+            <h1 class="titulo-da-noticia">
+              Cachorrinhos ajudam a aumentar o nível de serotonina.
+            </h1>
+            <div class="classificacao-da-noticia">
+              <span class="categoria-da-noticia">Animais.</span>
+              <span class="data-da-noticia">12/03/2026</span>
+            </div>
+            <div class="descricao-da-noticia">
+             Os cachorros ajudam significativamente na regulação de hormônios 
+             ligados ao bem-estar e ao estresse. A interação com cães, como 
+             acariciar, brincar ou simplesmente estar na presença deles, 
+             promove mudanças químicas reais no corpo humano.
+            </div>
+            <div class="autoria-da-noticia">Chico Buarque.</div>
+          </section>
+          <a href="#" class="botao-do-cartao">Ler mais</a>
+        </div>
 
-    btn.addEventListener('click', () => {
-      menu.classList.toggle('ativo');
-    });
-  </script>
+        <div class="cartao">
+          <img
+            src="./assets/img/cachorrinho.png"
+            alt=""
+            class="imagem-do-cartao"
+          />
+          <section class="corpo-do-cartao">
+            <h1 class="titulo-da-noticia">
+              Cachorrinhos ajudam a aumentar o nível de serotonina.
+            </h1>
+            <div class="classificacao-da-noticia">
+              <span class="categoria-da-noticia">Animais.</span>
+              <span class="data-da-noticia">12/03/2026</span>
+            </div>
+            <div class="descricao-da-noticia">
+             Os cachorros ajudam significativamente na regulação de hormônios 
+             ligados ao bem-estar e ao estresse. A interação com cães
+             promove mudanças químicas reais no corpo humano.
+            </div>
+            <div class="autoria-da-noticia">Maria Heloiza.</div>
+          </section>
+          <a href="#" class="botao-do-cartao">Ler mais</a>
+        </div>
 
-</body>
+        <div class="cartao">
+          <img
+            src="./assets/img/cachorrinho.png"
+            alt=""
+            class="imagem-do-cartao"
+          />
+          <section class="corpo-do-cartao">
+            <h1 class="titulo-da-noticia">
+              Cachorrinhos ajudam a aumentar o nível de serotonina.
+            </h1>
+            <div class="classificacao-da-noticia">
+              <span class="categoria-da-noticia">Animais.</span>
+              <span class="data-da-noticia">12/03/2026</span>
+            </div>
+            <div class="descricao-da-noticia">
+             Os cachorros ajudam significativamente na regulação de hormônios 
+             ligados ao bem-estar e ao estresse. A interação com cães
+             promove mudanças químicas reais no corpo humano.
+            </div>
+            <div class="autoria-da-noticia">Matheus Machado.</div>
+          </section>
+          <a href="#" class="botao-do-cartao">Ler mais</a>
+        </div>
+
+        <div class="cartao">
+          <img
+            src="./assets/img/cachorrinho.png"
+            alt=""
+            class="imagem-do-cartao"
+          />
+          <section class="corpo-do-cartao">
+            <h1 class="titulo-da-noticia">
+              Cachorrinhos ajudam a aumentar o nível de serotonina.
+            </h1>
+            <div class="classificacao-da-noticia">
+              <span class="categoria-da-noticia">Animais.</span>
+              <span class="data-da-noticia">12/03/2026</span>
+            </div>
+            <div class="descricao-da-noticia">
+             Os cachorros ajudam significativamente na regulação de hormônios 
+             ligados ao bem-estar e ao estresse. A interação com cães
+             promove mudanças químicas reais no corpo humano.
+            </div>
+            <div class="autoria-da-noticia">Maria Heloiza.</div>
+          </section>
+          <a href="#" class="botao-do-cartao">Ler mais</a>
+        </div>
+
+        <div class="cartao">
+          <img
+            src="./assets/img/cachorrinho.png"
+            alt=""
+            class="imagem-do-cartao"
+          />
+          <section class="corpo-do-cartao">
+            <h1 class="titulo-da-noticia">
+              Cachorrinhos ajudam a aumentar o nível de serotonina.
+            </h1>
+            <div class="classificacao-da-noticia">
+              <span class="categoria-da-noticia">Animais.</span>
+              <span class="data-da-noticia">12/03/2026</span>
+            </div>
+            <div class="descricao-da-noticia">
+             Os cachorros ajudam significativamente na regulação de hormônios 
+             ligados ao bem-estar e ao estresse. A interação com cães
+             promove mudanças químicas reais no corpo humano.
+            </div>
+            <div class="autoria-da-noticia">Maria Heloiza.</div>
+          </section>
+          <a href="#" class="botao-do-cartao">Ler mais</a>
+        </div>
+
+      </main>
+    </section>
+    <footer>&copy; Meu Site de Notícias, ❤️</footer>
+  </body>
 </html>

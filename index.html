@@ -1,26 +1,35 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu site de noticias</title>
-    <script src="./assets/js/login.js"> </script>
+    <title>Meu Site de Notícias</title>
+    <script src="./assets/js/login.js"></script>
+    <link rel="stylesheet" href="./assets/css/login/login.css">
+    <script src="https://kit.fontawesome.com/f7dc6d9018.js" crossorigin="anonymous"></script>    
 </head>
 
-<body>
+    <body>
     <div class="container">
         <h1>Login</h1>
         <form action="">
-            <input id="email" type="text" placeholder="informe seu email />
-            <input id=" senha" type="password" placeholder="informe sua senha">
-            <button onclick="verificarCredenciais()">
-
+            <input class="input-box" id="email" type="text" placeholder="Informe seu e-mail">
+            <i class="fa-regular fa-envelope"></i>
+            <input class="input-box" id="senha" type="password" placeholder="Informe sua senha">
+            <i class="fa-solid fa-lock"></i>
+            <div class="remember-forgot">
+                <label for="">
+                <input type="checkbox"> Lembrar minha senha</label>
+                <a href="#">Esqueci minha senha</a>
+            </div>
+            <button onclick="verificarCredenciais();return false;"> 
+                Entrar
             </button>
+            <div class="register-link">
+                <p>Não tem uma conta? <a href="#">Cadastre-se!</a></p>
+            </div>
         </form>
-
     </div>
-
+    
 </body>
-
-</html>
+</html> 

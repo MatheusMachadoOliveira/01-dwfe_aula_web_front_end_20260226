@@ -1,0 +1,77 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #252523; 
+    margin-bottom: 30px;
+}
+
+.input-box {
+    width: 100%;
+    padding: 12px 40px 12px 15px; 
+    margin: 10px 0;
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-box:focus {
+    border-color: #252523;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #252523; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #444; 
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    margin: 15px 0;
+}
+
+.remember-forgot a, .register-link a {
+    color: #252523;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link {
+    margin-top: 20px;
+    font-size: 0.9em;
+} */
